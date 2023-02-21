@@ -32,3 +32,31 @@
 
     margin-bottom: 1rem;
 }
+
+.sobre__imagem {
+    display: none; /* prorpridade da classe que esconde a imagem no mobile lembrando que a imagem já está sobre a classe */
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        display: flex;
+    }
+    
+    .sobre__conteudo {
+        margin-right: 3rem;
+    }
+
+    .sobre__titulo {
+        text-align: left;
+    }
+
+    .sobre__texto--divisao {
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom: 1.5rem; /* é o espaçamento inferior o de baixo por assim dizer*/
+    }
+
+    .sobre__imagem {
+        display: block;
+        border-radius: 5px;
+    }
+}
